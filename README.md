@@ -25,8 +25,9 @@ copy({foo: 'bar'});
 
 ```
 node benchmarks/main.js 
-fastest-json-copy (v1) x 549,333 ops/sec ±2.35% (88 runs sampled)
-fast-copy x 274,848 ops/sec ±0.77% (90 runs sampled)
+fastest-json-copy (v1) x 501,309 ops/sec ±2.21% (90 runs sampled)
+JSON.parse(JSON.stringify) x 127,909 ops/sec ±0.86% (92 runs sampled)
+fast-copy x 255,808 ops/sec ±1.95% (89 runs sampled)
 Fastest is fastest-json-copy (v1)
 ```
 

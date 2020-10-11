@@ -1,17 +1,20 @@
 const Benchmark = require('benchmark');
-const {deepClone: v1} = require('../lib');
-const fastCopy = require('fast-copy');
 const {allKeys} = require('./docs');
+const {versions} = require('./versions');
 
 const suite = new Benchmark.Suite;
 
+let i = 1;
+for (const name in versions) {
+  const copy = versions[name];
+  suite
+    .add(i + '. ' + name, function() {
+      copy(allKeys);
+    });
+  i++;
+}
+
 suite
-  .add(`fastest-json-copy (v1)`, function() {
-    v1(allKeys);
-  })
-  .add(`fast-copy`, function() {
-    fastCopy(allKeys);
-  })
   .on('cycle', function(event) {
     console.log(String(event.target));
   })

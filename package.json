@@ -30,8 +30,12 @@
     "@semantic-release/npm": "^7.0.6",
     "@types/jest": "^26.0.14",
     "benchmark": "^2.1.4",
+    "deepclone": "^1.0.2",
+    "fast-clone": "^1.5.13",
     "fast-copy": "^2.1.0",
+    "fast-deepclone": "^1.0.1",
     "jest": "^26.4.2",
+    "lodash": "^4.17.20",
     "semantic-release": "^17.1.2"
   },
   "release": {
