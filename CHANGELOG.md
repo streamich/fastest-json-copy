@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/streamich/fastest-json-copy/compare/v1.0.0...v1.0.1) (2020-10-11)
+
+
+### Bug Fixes
+
+* 🐛 don't use let keyword ([32a85c1](https://github.com/streamich/fastest-json-copy/commit/32a85c1cf041d151c2d1b6ba32c71a38f114fb06))
+
 # 1.0.0 (2020-10-11)
 
 
