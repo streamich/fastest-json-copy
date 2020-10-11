@@ -14,10 +14,6 @@ refs:
       run:
         name: Install Dependencies
         command: yarn install --pure-lockfile
-    - &Build
-      run:
-        name: Build
-        command: yarn build
     - &Test
       run:
         name: Test
@@ -34,7 +30,6 @@ jobs:
       - checkout
       - *Versions
       - *Install
-      - *Build
       - *Test
       - *Post_to_dev_null
 
@@ -44,7 +39,6 @@ jobs:
       - checkout
       - *Versions
       - *Install
-      - *Build
       - *Test
       - *Post_to_dev_null
       - run:
@@ -58,7 +52,6 @@ jobs:
       - checkout
       - *Versions
       - *Install
-      - *Build
       - *Test
       - *Post_to_dev_null
       - run:
